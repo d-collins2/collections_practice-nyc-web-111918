@@ -7,9 +7,7 @@ def sort_array_desc(array)
 end 
 
 def sort_array_char_count(array)
-  array.sort_by do |el| 
-    el.length 
-  end 
+  array.sort_by {|el| el.length }
 end 
 
 def reverse_array(array)
@@ -31,3 +29,7 @@ end
 def find_a(array)
   array.select {|word| word[0] == "a"}
 end 
+
+def sum_array(array)
+  array.reduce(:+)
+end
