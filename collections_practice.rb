@@ -35,5 +35,11 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.map{|word| word + "s"}
+  array.map do |word| 
+    if word == array[1]
+      word
+    else
+     word + "s" 
+   end 
+  end 
 end 
