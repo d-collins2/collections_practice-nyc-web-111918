@@ -27,3 +27,7 @@ def kesha_maker(array)
     c.join    
   end 
 end 
+
+def find_a(array)
+  
+end 
